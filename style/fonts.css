@@ -1,0 +1,18 @@
+@font-face {
+  font-family: "DESTROY";
+  src: url("../fonts/Destroy.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "FasterOne";
+  src: url("../fonts/FasterOne-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Oswald-Regular";
+  src: url("../fonts/Oswald-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}

@@ -1,0 +1,138 @@
+@charset "utf-8";
+
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/*Шрифт при выделении*/
+::-moz-selection {
+    background: black;
+    color: #FFF;
+    /*неон*/
+    text-shadow:
+      0 0 7px #fff,
+      0 0 10px #fff,
+      0 0 21px #fff,
+      0 0 42px #0fa,
+      0 0 82px #0fa,
+      0 0 92px #0fa,
+      0 0 102px #0fa,
+      0 0 151px #0fa;
+}
+::selection {
+    background: black;
+    color: #FFF;
+    /*неон*/
+    text-shadow:
+      0 0 7px #fff,
+      0 0 10px #fff,
+      0 0 21px #fff,
+      0 0 42px #0fa,
+      0 0 82px #0fa,
+      0 0 92px #0fa,
+      0 0 102px #0fa,
+      0 0 151px #0fa;
+}
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+img,
+svg {
+    vertical-align: top;
+}
+br {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+body {
+    font-weight: 400;
+    font-size: 14px;
+
+    color: #5e5e5e;
+}
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.header__top {
+    display: block;
+    background-color: #222;
+    height: 50px;
+}
+.header__content{
+  display: flex;
+  justify-content: space-between;
+}
+.header__brawl, .header__git{
+    margin-top: 5px;
+    /*Запрет на выделение*/
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+.header__mail{
+  display: flex;
+  align-self: center;
+}
+.header__kok{
+  font-family: "FasterOne";
+  font-size: 3vw;
+  color: gray;
+  text-shadow:
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff,
+    0 0 42px #0fa,
+    0 0 82px #0fa,
+    0 0 92px #0fa,
+    0 0 102px #0fa,
+    0 0 151px #0fa;
+  font-weight: 500;
+}
+.header__git {
+    color: #dfdddf;
+    /*margin-top: 18px;*/
+}
+.retro{
+  background: url(../vaporwave.jpg);
+  background-color: #222;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: 50% 0px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding: 0;
+  height: 650px;
+}
+.me{
+  background:black;
+  font-family: "Oswald-Regular";
+  font-size: 3vw;
+  color: white;
+}
+h2{
+  margin-left: 600px;
+}
+footer {
+    background-color:black;
+    margin-top: 0px;
+    height: 50px;
+    text-align: center;
+}
+.foot {
+  background-color: black;
+  font-family: "DESTROY";
+  padding-top: 15px;
+}
