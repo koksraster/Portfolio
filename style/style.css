@@ -12,7 +12,7 @@
     background: black;
     color: #FFF;
     /*неон*/
-    text-shadow:
+    /* text-shadow:
       0 0 7px #fff,
       0 0 10px #fff,
       0 0 21px #fff,
@@ -20,13 +20,13 @@
       0 0 82px #0fa,
       0 0 92px #0fa,
       0 0 102px #0fa,
-      0 0 151px #0fa;
+      0 0 151px #0fa; */
 }
 ::selection {
     background: black;
-    color: #FFF;
+    color: rgb(177, 26, 207);
     /*неон*/
-    text-shadow:
+    /* text-shadow:
       0 0 7px #fff,
       0 0 10px #fff,
       0 0 21px #fff,
@@ -34,12 +34,15 @@
       0 0 82px #0fa,
       0 0 92px #0fa,
       0 0 102px #0fa,
-      0 0 151px #0fa;
+      0 0 151px #0fa; */
 }
+/* отвечает за подчёркивание ссылок none - убрано */
 a {
     text-decoration: none;
     display: inline-block;
+    
 }
+
 img,
 svg {
     vertical-align: top;
@@ -103,12 +106,9 @@ body {
     color: #dfdddf;
     /*margin-top: 18px;*/
 }
-.retro{
-  background: url(../vaporwave.jpg);
-  background-color: #222;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-position: 50% 0px;
+
+.retro__wave{
+  background: fixed #222 url(../img/vaporwave.jpg) 50% 0px no-repeat; /*background - attachment || color || image || position || repeat  здесь объединено несколько бэкграундов для сокращения кода, однако этот коммент занимает столько же места*/
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -116,23 +116,93 @@ body {
   padding: 0;
   height: 650px;
 }
-.me{
-  background:black;
-  font-family: "Oswald-Regular";
-  font-size: 3vw;
-  color: white;
+
+/* Эта штука отвечает за затемнение картинки */
+.retro__wave:after{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,.5);/* 5 это уровень затемнения */
+  z-index: 2;
 }
+
+.retro{
+  position: relative;
+  z-index: 3;
+  
+}
+.retro__text{
+  position: absolute;
+  font-family: "Oswald-Regular" ;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  z-index: 3;
+  /* центрирование */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.retro__text a{
+/*  цвет ссылки    */
+  color: #0fa;
+}
+.retro__text a:hover{
+    /*  цвет ссылки при наведении   */
+  color: rgb(255, 255, 255);
+    /*неон*/
+    text-shadow:
+      0 0 7px #fff,
+      0 0 10px #fff,
+      0 0 21px #fff,
+      0 0 42px #0fa,
+      0 0 82px #0fa,
+      0 0 92px #0fa,
+      0 0 102px #0fa,
+      0 0 151px #0fa;
+}
+.retro__text h1{
+  font-size:50px;
+  text-align: center;
+  color: #fff;
+}
+.retro__text p{
+  font-size:30px;
+  text-align: center;
+}
+.retro__text .smyle:hover{
+  color: rgb(255, 255, 255);
+    /*неон*/
+    text-shadow:
+      0 0 7px #fff,
+      0 0 10px #fff,
+      0 0 21px #fff,
+      0 0 42px #0fa,
+      0 0 82px #0fa,
+      0 0 92px #0fa,
+      0 0 102px #0fa,
+      0 0 151px #0fa;
+}
+
 h2{
   text-align:center;
 }
 footer {
-    background-color:black;
-    margin-top: 0px;
-    height: 50px;
-    text-align: center;
+  background-color:black;
+  margin-top: 0px;
+  height: 55px;
+  text-align: center;
+  /* центрирование */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .foot {
   background-color: black;
   font-family: "DESTROY";
-  padding-top: 15px;
 }
