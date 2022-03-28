@@ -57,7 +57,7 @@ br {
 body {
     font-weight: 400;
     font-size: 14px;
-
+    background: #dfdddf;
     color: #5e5e5e;
 }
 .container {
@@ -173,10 +173,19 @@ body {
 }
 .retro__text p{
   font-size:30px;
+  color: #fff;
   text-align: center;
+}
+.retro__text .smyle{
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
 }
 .retro__text .smyle:hover{
   color: rgb(255, 255, 255);
+  cursor: pointer;
     /*неон*/
     text-shadow:
       0 0 7px #fff,
@@ -191,6 +200,10 @@ body {
 
 h2{
   text-align:center;
+  color: rgb(0, 0, 0);
+}
+p{
+  color: rgb(0, 0, 0);
 }
 footer {
   background-color:black;
@@ -201,6 +214,9 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+footer p{
+  color: rgb(211, 206, 206);
 }
 .foot {
   background-color: black;
